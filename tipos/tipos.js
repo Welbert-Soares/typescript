@@ -69,3 +69,9 @@ let calculo;
 // calculo()
 calculo = multiplicar;
 console.log(calculo(5, 6));
+// objetos
+let usuario = {
+    nome: 'João',
+    idade: 27
+};
+console.log(usuario);
