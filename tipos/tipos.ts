@@ -108,10 +108,13 @@ console.log(usuario)
             -> Fora do horário (> 8)
 */
 
-let funcionario: {
+// Alias
+type Funcionario =  {
     supervisores: string[],
     baterPonto: (horas: number) => string
-} = {
+}
+
+let funcionario: Funcionario = {
     supervisores: ['Ana', 'Fernando'],
     baterPonto(horario: number): string {
         if (horario <= 8) {
@@ -121,6 +124,17 @@ let funcionario: {
         }
     }
 }
+let funcionario2: Funcionario = {
+    supervisores: ['Bia', 'Carlos'],
+    baterPonto(horario: number): string {
+        if (horario <= 8) {
+            return 'Ponto normal'
+        } else {
+            return 'Fora do horário'
+        }
+    }
+}
+
 
 console.log(funcionario.supervisores)
 console.log(funcionario.baterPonto(8))
