@@ -40,4 +40,26 @@ console.log(somar(2, 2))
 const subtrair = (n1: number, n2: number): number => n1 - n2
 console.log(subtrair(2, 3))
 
+const saudacao = () => console.log('Olá!')
+saudacao()
 
+const falarCom = (pessoa: string) => console.log('Olá ' + pessoa)
+falarCom('João')
+
+// this
+
+function normalComThis() {
+    console.log(this)
+}
+// const normalComThisEspecial = normalComThis
+//     .bind({nome:"Ana"})
+// normalComThisEspecial()
+
+// // this???
+// console.log(this)
+// const arrowComThis = () => console.log(this)
+// arrowComThis()
+
+// const arrowComThisEspecial = arrowComThis
+//     .bind({nome: 'Ana'})
+// arrowComThisEspecial()
