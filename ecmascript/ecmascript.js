@@ -61,4 +61,6 @@ function contagemRegressiva(inicio = 5, fim = inicio - 5) {
 }
 contagemRegressiva();
 contagemRegressiva(3);
+// Rest & Spread
+const numbers = [1, 10, 99, -5];
 //# sourceMappingURL=ecmascript.js.map
