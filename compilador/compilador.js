@@ -10,7 +10,7 @@ function soma(a, b) {
 let qualquerCoisa;
 qualquerCoisa = 12;
 qualquerCoisa = 'abc';
-function saudar(isManha, horas) {
+function saudar(isManha) {
     let saudacao;
     if (isManha) {
         saudacao = 'Bom dia!';
