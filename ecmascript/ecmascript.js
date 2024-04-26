@@ -37,9 +37,9 @@ saudacao();
 const falarCom = (pessoa) => console.log('Olá ' + pessoa);
 falarCom('João');
 // this
-function normalComThis() {
-    console.log(this);
-}
+// function normalComThis() {
+//     console.log(this)
+// }
 // const normalComThisEspecial = normalComThis
 //     .bind({nome:"Ana"})
 // normalComThisEspecial()
@@ -50,4 +50,15 @@ function normalComThis() {
 // const arrowComThisEspecial = arrowComThis
 //     .bind({nome: 'Ana'})
 // arrowComThisEspecial()
+// Parâmetros padrão
+function contagemRegressiva(inicio = 5, fim = inicio - 5) {
+    console.log(inicio);
+    while (inicio >= fim) {
+        inicio--;
+        console.log(inicio);
+    }
+    console.log('Fim!');
+}
+contagemRegressiva();
+contagemRegressiva(3);
 //# sourceMappingURL=ecmascript.js.map
