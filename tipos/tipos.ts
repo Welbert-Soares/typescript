@@ -30,3 +30,27 @@ console.log(typeof hobbies)
 hobbies = [100, 200, 300]
 // hobbies = 100
 console.log(hobbies)
+
+// tuplas
+let endereco: [string, number] = ["Av Principal", 99]
+console.log(endereco)
+
+endereco = ["Rua Importante", 1260]
+console.log(endereco)
+
+// enums
+enum Cor {
+    Cinza,
+    Verde = 100,
+    Azul = 2,
+    Laranja,
+    Amarelo,
+    Vermelho = 100
+}
+
+let minhaCor: Cor = Cor.Verde
+console.log(minhaCor)
+
+console.log(Cor.Azul)
+console.log(Cor.Laranja, Cor.Amarelo)
+console.log(Cor.Vermelho)
