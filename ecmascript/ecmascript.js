@@ -63,4 +63,8 @@ contagemRegressiva();
 contagemRegressiva(3);
 // Rest & Spread
 const numbers = [1, 10, 99, -5];
+console.log(Math.max(...numbers));
+const turmaA = ['João', 'Maria', 'Fernanda'];
+const turmaB = ['Fernando', 'Miguel', 'Lorena', ...turmaA];
+console.log(turmaB);
 //# sourceMappingURL=ecmascript.js.map
