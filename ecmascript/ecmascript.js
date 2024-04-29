@@ -138,4 +138,26 @@ const cientista = { primeiroNome: 'Will', experiencia: 12 };
 const { primeiroNome, experiencia } = cientista;
 console.log(primeiroNome, experiencia);
 // Callback
+function esplerar3s(callback) {
+    setTimeout(() => {
+        callback('3s depois...');
+    }, 3000);
+}
+esplerar3s(function (dado) {
+    console.log(dado);
+});
+// Promises
+function esplerar3sPromise() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('3s depois...');
+        }, 3000);
+    });
+}
+// esplerar3sPromise()
+//     .then(dado => console.log(dado))
+fetch('https://www.swapi.tech/api/people/2')
+    .then(resp => resp.json())
+    .then(dados => console.log(dados))
+    .catch(err => console.log('Catch!!!' + err));
 //# sourceMappingURL=ecmascript.js.map
