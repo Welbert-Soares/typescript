@@ -53,3 +53,37 @@ potencia = function (base: number, exp: number): number {
 };
 
 console.log(potencia(3, 10));
+
+// Herança de Interface
+interface A {
+    a(): void;
+}
+
+interface B {
+    b(): void;
+}
+
+interface ABC extends A, B {
+    c(): void;
+}
+
+class RealA implements A {
+    a(): void {}
+}
+
+class RealAB implements A, B {
+    a(): void {}
+    b(): void {}
+}
+
+class RealABC implements ABC {
+    a(): void {}
+    b(): void {}
+    c(): void {}
+}
+
+abstract class AbstrataABD implements A, B {
+    a(): void {}
+    b(): void {}
+    abstract d(): void;
+}
