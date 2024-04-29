@@ -87,3 +87,6 @@ abstract class AbstrataABD implements A, B {
     b(): void {}
     abstract d(): void;
 }
+
+
+
