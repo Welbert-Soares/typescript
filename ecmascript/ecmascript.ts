@@ -4,7 +4,7 @@ console.log(seraQuePode)
 
 let estaFrio = true
 if (estaFrio) {
-    let  acao = 'Colocar o casaco!'
+    let acao = 'Colocar o casaco!'
     console.log(acao)
 }
 
@@ -66,7 +66,7 @@ falarCom('João')
 
 // Parâmetros padrão
 function contagemRegressiva(inicio: number = 5,
-    fim: number = inicio - 5, 
+    fim: number = inicio - 5,
 ): void {
     console.log(inicio)
     while (inicio >= fim) {
@@ -85,3 +85,27 @@ console.log(Math.max(...numbers))
 const turmaA: string[] = ['João', 'Maria', 'Fernanda']
 const turmaB: string[] = ['Fernando', 'Miguel', 'Lorena', ...turmaA]
 console.log(turmaB)
+
+function returnarArray(...args: number[]): number[] {
+    return args
+}
+
+const numeros = returnarArray(1, 2, 4, 5, 6, 7, 8, 9, 10)
+console.log(numeros)
+console.log(returnarArray(...numbers))
+
+// Rest & Spread (Tupla)
+const tupla: [number, string, boolean] = [1, 'abc', false]
+
+function tuplaParam1(a: number, b: string, c: boolean): void {
+    console.log(`1) ${a} ${b} ${c}`)
+}
+
+tuplaParam1(...tupla)
+
+function tuplaParam2(...params: [number, string, boolean]) {
+    // console.log(Array.isArray(params))
+    console.log(`2) ${params[0]} ${params[1]} ${params[2]}`)
+}
+
+tuplaParam2(...tupla)
