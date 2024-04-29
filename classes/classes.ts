@@ -111,4 +111,11 @@ console.log(carro1.acelerar())
 Array(100).fill(0).forEach(() => carro1.frear());
 console.log(carro1.frear())
 
+// //simular "erros"
+// carro1.velocidadeAtual = 300;
+// console.log('atual -> ' + carro1.velocidadeAtual);
+
+// carro1.velocidadeMaxima = 500;
+// console.log('maxima -> ' + carro1.velocidadeMaxima);
+
 
