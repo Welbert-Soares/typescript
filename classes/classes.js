@@ -52,4 +52,37 @@ console.log(itemP.resumo());
 const itemP2 = new Produto('Celular', 2.299, 0.1);
 console.log(itemP2);
 console.log(itemP2.resumo());
+// Modificadores de Acesso
+// public, private, protected
+class Carro {
+    constructor(marca, modelo, velocidadeMaxima = 200) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.velocidadeMaxima = velocidadeMaxima;
+        this.velocidadeAtual = 0;
+    }
+    alterarVelocidade(delta) {
+        const novaVelocidade = this.velocidadeAtual + delta;
+        const velocidadeValida = novaVelocidade >= 0 && novaVelocidade <= this.velocidadeMaxima;
+        if (velocidadeValida) {
+            this.velocidadeAtual = novaVelocidade;
+        }
+        else {
+            this.velocidadeAtual = delta > 0 ? this.velocidadeMaxima : 0;
+        }
+        return this.velocidadeAtual;
+    }
+    acelerar() {
+        return this.alterarVelocidade(5);
+    }
+    frear() {
+        return this.alterarVelocidade(-5);
+    }
+}
+const carro1 = new Carro('Lamborghini', 'Aventador', 350);
+console.log(carro1);
+Array(100).fill(0).forEach(() => carro1.acelerar());
+console.log(carro1.acelerar());
+Array(100).fill(0).forEach(() => carro1.frear());
+console.log(carro1.frear());
 //# sourceMappingURL=classes.js.map
