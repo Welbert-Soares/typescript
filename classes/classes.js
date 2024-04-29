@@ -28,4 +28,20 @@ console.log(aniversarioEsperto);
 const casamentoEsperto = new DataEsperta(); // posso omitir os parâmetros
 casamentoEsperto.ano = 2024;
 console.log(casamentoEsperto);
-//# sourceMappingURL=calsses.js.map
+// Desafio Produto
+// Atributos: nome, preco e desconto
+// Criar o construtor
+// Obs 1: Desconto é opcional (valor padrão 0)
+// Obs 2: Criar dois produtos: passando dois e três params
+class Produto {
+    constructor(nome, preco, desconto = 0) {
+        this.nome = nome;
+        this.preco = preco;
+        this.desconto = desconto;
+    }
+}
+const itemP = new Produto('Notebook', 4.299);
+console.log(itemP);
+const itemP2 = new Produto('Celular', 2.299, 0.1);
+console.log(itemP2);
+//# sourceMappingURL=classes.js.map

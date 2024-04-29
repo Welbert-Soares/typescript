@@ -26,7 +26,7 @@ class DataEsperta {
     public dia: number = 1,
     public mes: number = 1,
     public ano: number = 1970
-  ) {}
+  ) { }
 }
 
 const aniversarioEsperto = new DataEsperta(25, 2, 1999);
@@ -37,3 +37,24 @@ console.log(aniversarioEsperto);
 const casamentoEsperto = new DataEsperta(); // posso omitir os parâmetros
 casamentoEsperto.ano = 2024;
 console.log(casamentoEsperto);
+
+// Desafio Produto
+// Atributos: nome, preco e desconto
+// Criar o construtor
+// Obs 1: Desconto é opcional (valor padrão 0)
+// Obs 2: Criar dois produtos: passando dois e três params
+
+class Produto {
+  constructor(
+    public nome: string,
+    public preco: number,
+    public desconto: number = 0
+  ) {
+
+  }
+}
+
+const itemP = new Produto('Notebook', 4.299);
+console.log(itemP);
+const itemP2 = new Produto('Celular', 2.299, 0.1);
+console.log(itemP2);
