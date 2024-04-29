@@ -49,12 +49,17 @@ class Produto {
     public nome: string,
     public preco: number,
     public desconto: number = 0
-  ) {
+  ) {}
 
+  public resumo(): string {
+    return `${this.nome} custa R$ ${this.preco} (${this.desconto * 100}% off) `
   }
 }
 
 const itemP = new Produto('Notebook', 4.299);
 console.log(itemP);
+console.log(itemP.resumo());
+
 const itemP2 = new Produto('Celular', 2.299, 0.1);
 console.log(itemP2);
+console.log(itemP2.resumo());
