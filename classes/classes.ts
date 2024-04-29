@@ -201,7 +201,7 @@ class Multiplicacao extends Calculo {
   }
 }
 
-let c1 = new Soma();
+let c1: Calculo = new Soma();
 c1.executar(2, 3, 4, 5);
 console.log(c1.getResultado());
 
