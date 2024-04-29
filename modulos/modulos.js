@@ -10,4 +10,6 @@ const retangulo_1 = __importDefault(require("./retangulo"));
 console.log('Módulo carregado...');
 console.log((0, retangulo_1.default)(7, 8));
 console.log((0, circuferencia_1.areaCircular)(2));
+const { digaOi } = require('./novo');
+console.log(digaOi('Ana'));
 //# sourceMappingURL=modulos.js.map

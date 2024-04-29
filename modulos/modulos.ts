@@ -6,3 +6,6 @@ import retangulo from "./retangulo";
 console.log('Módulo carregado...');
 console.log(retangulo(7, 8));
 console.log(circ(2));
+
+const { digaOi} = require('./novo');
+console.log(digaOi('Ana'));
