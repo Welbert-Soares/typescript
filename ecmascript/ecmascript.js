@@ -108,4 +108,11 @@ const { nome: n, preco: p, caracteristicas: { w } } = item;
 console.log(n);
 console.log(p);
 console.log(w);
+const usuarioID = 'Welbert Soares';
+const notificacoes = '9';
+const boasVindas = `
+    Boas Vidas ${usuarioID}, notificações: ${parseInt(notificacoes) > 9 ? '+9' : notificacoes}`;
+console.log(boasVindas);
+console.log(`${(1 + 1) * 30}`);
+console.log(`Motor: ${caracteristicas[0]}`);
 //# sourceMappingURL=ecmascript.js.map
