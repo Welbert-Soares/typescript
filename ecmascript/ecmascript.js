@@ -84,4 +84,28 @@ function tuplaParam2(...params) {
     console.log(`2) ${params[0]} ${params[1]} ${params[2]}`);
 }
 tuplaParam2(...tupla);
+// Destructuring (array)
+const caracteristicas = ['Motor Zet 1.8', 2020];
+// const motor = caracteristicas[0]
+// const ano = caracteristicas[1]
+const [motor, ano] = caracteristicas; // Destructuring
+console.log(motor);
+console.log(ano);
+// const [w, z] = [2, 3]
+// Destructuring (objeto)
+const item = {
+    nome: 'SSD 480GB',
+    preco: 200,
+    caracteristicas: {
+        w: 'Importado'
+    }
+};
+const nomeItem = item.nome;
+const precoItem = item.preco;
+console.log(nomeItem);
+console.log(precoItem);
+const { nome: n, preco: p, caracteristicas: { w } } = item;
+console.log(n);
+console.log(p);
+console.log(w);
 //# sourceMappingURL=ecmascript.js.map
