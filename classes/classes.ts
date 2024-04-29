@@ -49,10 +49,14 @@ class Produto {
     public nome: string,
     public preco: number,
     public desconto: number = 0
-  ) {}
+  ) { }
+
+  public precoComDesconto(): number {
+    return this.preco * (1 - this.desconto)
+  }
 
   public resumo(): string {
-    return `${this.nome} custa R$ ${this.preco} (${this.desconto * 100}% off) `
+    return `${this.nome} custa R$ ${this.precoComDesconto()} (${this.desconto * 100}% off) `
   }
 }
 
