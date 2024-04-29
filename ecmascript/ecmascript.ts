@@ -177,30 +177,30 @@ console.log(primeiroNome, experiencia)
 
 // Callback
 
-function esplerar3s(callback:(dado: string) => void) {
-    setTimeout(() => {
-        callback('3s depois...')
-    }, 3000)
-}
+// function esplerar3s(callback:(dado: string) => void) {
+//     setTimeout(() => {
+//         callback('3s depois...')
+//     }, 3000)
+// }
 
-esplerar3s(function(dado: string) {
-    console.log(dado)
-})
+// esplerar3s(function(dado: string) {
+//     console.log(dado)
+// })
 
-// Promises
+// // Promises
 
-function esplerar3sPromise() {
-    return new Promise((resolve: any) => {
-        setTimeout(() => {
-            resolve('3s depois...')
-        }, 3000)
-    })
-}
-// esplerar3sPromise()
-//     .then(dado => console.log(dado))
+// function esplerar3sPromise() {
+//     return new Promise((resolve: any) => {
+//         setTimeout(() => {
+//             resolve('3s depois...')
+//         }, 3000)
+//     })
+// }
+// // esplerar3sPromise()
+// //     .then(dado => console.log(dado))
 
 
-fetch('https://www.swapi.tech/api/people/2')
-    .then(resp => resp.json())
-    .then(dados => console.log(dados))
-    .catch(err => console.log('Catch!!!' + err))
+// fetch('https://www.swapi.tech/api/people/2')
+//     .then(resp => resp.json())
+//     .then(dados => console.log(dados))
+//     .catch(err => console.log('Catch!!!' + err))
