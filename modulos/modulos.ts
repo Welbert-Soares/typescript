@@ -1,5 +1,6 @@
 import { areaRetangular } from "./retangulo";
 import { areaCircular } from "./circuferencia";
 
-console.log(areaRetangular(10, 20));
-console.log(areaCircular(10));
+console.log('Módulo carregado...');
+console.log(areaRetangular(7, 8));
+console.log(areaCircular(2));
